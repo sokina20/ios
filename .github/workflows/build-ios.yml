@@ -18,11 +18,25 @@ jobs:
       - name: Get dependencies
         run: flutter pub get
         
-      - name: Build IPA
-        run: flutter build ipa --release --no-codesign
+      - name: Build iOS app (Debug)
+        run: flutter build ios --debug --no-codesign
         
+      - name: Create IPA from built app
+        run: |
+          # إنشاء مجلد Payload
+          mkdir -p Payload
+          
+          # نسخ التطبيق المبني
+          cp -r build/ios/iphoneos/Runner.app Payload/
+          
+          # إنشاء ملف IPA
+          zip -r app.ipa Payload/
+          
+          # التأكد من إنشاء الملف
+          ls -la app.ipa
+          
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:
-          name: app-release-unsigned
-          path: build/ios/ipa/*.ipa
+          name: app-ipa
+          path: app.ipa
