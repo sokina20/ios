@@ -1027,7 +1027,7 @@ class _AdminJobsScreenState extends State<AdminJobsScreen> {
                       label: 'تعديل وظيفة $title',
                       child: CupertinoButton(
                         padding: EdgeInsets.zero,
-                        minimumSize: const Size(40, 40),
+                        
                         onPressed: () => _showJobDialog(job: item),
                         child: Container(
                           width: 36,
@@ -1050,7 +1050,7 @@ class _AdminJobsScreenState extends State<AdminJobsScreen> {
                       label: 'حذف وظيفة $title',
                       child: CupertinoButton(
                         padding: EdgeInsets.zero,
-                        minimumSize: const Size(40, 40),
+                        
                         onPressed: () => _deleteJob(id, title),
                         child: Container(
                           width: 36,

@@ -1440,7 +1440,7 @@ class _AdminLessonsScreenState extends State<AdminLessonsScreen> {
                       label: 'تعديل درس $title',
                       child: CupertinoButton(
                         padding: EdgeInsets.zero,
-                        minimumSize: const Size(40, 40),
+                        
                         onPressed: () => _showLessonDialog(lesson: item),
                         child: Container(
                           width: 36,
@@ -1463,7 +1463,7 @@ class _AdminLessonsScreenState extends State<AdminLessonsScreen> {
                       label: 'حذف درس $title',
                       child: CupertinoButton(
                         padding: EdgeInsets.zero,
-                        minimumSize: const Size(40, 40),
+                        
                         onPressed: () => _deleteLesson(id, title),
                         child: Container(
                           width: 36,

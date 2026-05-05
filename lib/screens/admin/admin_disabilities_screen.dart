@@ -798,7 +798,7 @@ class _AdminDisabilitiesScreenState extends State<AdminDisabilitiesScreen> {
                         label: 'تعديل نوع الإعاقة $nameAr',
                         child: CupertinoButton(
                           padding: EdgeInsets.zero,
-                          minimumSize: const Size(40, 40),
+                          
                           onPressed: () => _showDisabilityDialog(disability: item),
                           child: Container(
                             width: 36,
@@ -821,7 +821,7 @@ class _AdminDisabilitiesScreenState extends State<AdminDisabilitiesScreen> {
                         label: 'حذف نوع الإعاقة $nameAr',
                         child: CupertinoButton(
                           padding: EdgeInsets.zero,
-                          minimumSize: const Size(40, 40),
+                          
                           onPressed: () => _deleteDisability(id),
                           child: Container(
                             width: 36,

@@ -899,7 +899,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                         label: 'تغيير دور المستخدم',
                         child: CupertinoButton(
                           padding: EdgeInsets.zero,
-                          minimumSize: const Size(40, 40),
+                          
                           onPressed: () => _showChangeRoleDialog(user),
                           child: Container(
                             width: 36,
@@ -922,7 +922,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                         label: 'تغيير حالة المستخدم',
                         child: CupertinoButton(
                           padding: EdgeInsets.zero,
-                          minimumSize: const Size(40, 40),
+                          
                           onPressed: () => _showChangeStatusDialog(user),
                           child: Container(
                             width: 36,
@@ -945,7 +945,7 @@ class _AdminUsersScreenState extends State<AdminUsersScreen> {
                         label: 'تغيير نوع الإعاقة',
                         child: CupertinoButton(
                           padding: EdgeInsets.zero,
-                          minimumSize: const Size(40, 40),
+                          
                           onPressed: () => _showChangeDisabilityDialog(user),
                           child: Container(
                             width: 36,

@@ -356,7 +356,7 @@ class _AdminRatingsScreenState extends State<AdminRatingsScreen> {
               label: 'تحديث القائمة',
               child: CupertinoButton(
                 padding: EdgeInsets.zero,
-                minimumSize: const Size(40, 40),
+                
                 onPressed: _loadRatings,
                 child: Container(
                   width: 32,

@@ -420,7 +420,7 @@ class _ApplyJobScreenState extends State<ApplyJobScreen> {
                                   label: 'إزالة الملف المختار',
                                   child: CupertinoButton(
                                     padding: EdgeInsets.zero,
-                                    minimumSize: const Size(30, 30),
+                                    
                                     onPressed: () {
                                       setState(() {
                                         _uploadedCvPath = null;

@@ -986,7 +986,7 @@ class _AdminCompaniesScreenState extends State<AdminCompaniesScreen> {
                       label: 'تعديل شركة $name',
                       child: CupertinoButton(
                         padding: EdgeInsets.zero,
-                        minimumSize: const Size(40, 40),
+                        
                         onPressed: () => _showCompanyDialog(company: item),
                         child: Container(
                           width: 36,
@@ -1009,7 +1009,7 @@ class _AdminCompaniesScreenState extends State<AdminCompaniesScreen> {
                       label: 'حذف شركة $name',
                       child: CupertinoButton(
                         padding: EdgeInsets.zero,
-                        minimumSize: const Size(40, 40),
+                        
                         onPressed: () => _deleteCompany(id),
                         child: Container(
                           width: 36,

@@ -503,7 +503,7 @@ class _AdminJobApplicationsScreenState
               label: 'تحديث القائمة',
               child: CupertinoButton(
                 padding: EdgeInsets.zero,
-                minimumSize: const Size(40, 40),
+                
                 onPressed: _loadApplications,
                 child: Container(
                   width: 32,
