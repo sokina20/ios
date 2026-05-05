@@ -327,7 +327,6 @@ class _LessonDetailsScreenState extends State<LessonDetailsScreen> {
                 hint: 'اضغط مرتين لتحديث حالة المفضلة',
                 child: CupertinoButton(
                   padding: EdgeInsets.zero,
-                  minimumSize: const Size(44, 44),
                   onPressed: _isSaving ? null : _toggleFavorite,
                   child: Icon(
                     lesson.isFavorite
@@ -416,9 +415,7 @@ class _LessonDetailsScreenState extends State<LessonDetailsScreen> {
     return CupertinoScrollbar(
       child: CustomScrollView(
         slivers: [
-          CupertinoSliverRefreshControl(
-            onRefresh: _loadLessonDetails,
-          ),
+          const CupertinoSliverRefreshControl(),
           SliverPadding(
             padding: const EdgeInsets.all(16),
             sliver: SliverList(
@@ -699,7 +696,6 @@ class _LessonDetailsScreenState extends State<LessonDetailsScreen> {
                       hint: 'اضغط مرتين لاختيار هذا التقييم',
                       child: CupertinoButton(
                         padding: EdgeInsets.zero,
-                        minimumSize: const Size(44, 44),
                         onPressed: _isSaving
                             ? null
                             : () {
@@ -743,7 +739,7 @@ class _LessonDetailsScreenState extends State<LessonDetailsScreen> {
                       minLines: 2,
                       placeholder: 'اكتب رأيك في الدرس...',
                       placeholderStyle: TextStyle(
-                        color: AppColors.textSecondary.withValues(alpha: 0.7),
+                        color: AppColors.textSecondary.withOpacity(0.7),
                       ),
                       padding: const EdgeInsets.all(12),
                     ),
@@ -880,10 +876,10 @@ class _LessonDetailsScreenState extends State<LessonDetailsScreen> {
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
         decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.1),
+          color: color.withOpacity(0.1),
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: color.withValues(alpha: 0.3),
+            color: color.withOpacity(0.3),
             width: 0.5,
           ),
         ),
