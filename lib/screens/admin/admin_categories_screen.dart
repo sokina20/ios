@@ -270,9 +270,9 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text(
+            Text(
               'الحالة',
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 16,
                 color: AppColors.textPrimary,
               ),
@@ -303,7 +303,7 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
                 ),
               ],
             ),
-          ),
+          ],
         ),
       ),
     );
@@ -459,7 +459,7 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
         automaticallyImplyLeading: false,
       ),
       child: _isLoading
-          ? const Center(
+          ?  Center(
               child: Semantics(
                 label: 'جاري تحميل الأقسام',
                 child: CupertinoActivityIndicator(radius: 20),
@@ -533,7 +533,7 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
               width: 54,
               height: 54,
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.15),
+                color: Colors.white.withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(16),
               ),
               child: const Icon(
@@ -607,7 +607,7 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
         controller: _searchController,
         placeholder: 'بحث باسم القسم (عربي/إنجليزي) أو الوصف',
         placeholderStyle: TextStyle(
-          color: AppColors.textSecondary.withOpacity(0.7),
+          color: AppColors.textSecondary.withValues(alpha: 0.7),
         ),
         padding: const EdgeInsets.all(14),
         prefix: Padding(
@@ -661,7 +661,7 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
                     width: 48,
                     height: 48,
                     decoration: BoxDecoration(
-                      color: AppColors.primary.withOpacity(0.1),
+                      color: AppColors.primary.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(14),
                     ),
                     child: const Icon(
@@ -717,7 +717,7 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
                                 vertical: 5,
                               ),
                               decoration: BoxDecoration(
-                                color: _statusColor(status).withOpacity(0.12),
+                                color: _statusColor(status).withValues(alpha: 0.12),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Text(
@@ -736,7 +736,7 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
                                   vertical: 5,
                                 ),
                                 decoration: BoxDecoration(
-                                  color: AppColors.primary.withOpacity(0.08),
+                                  color: AppColors.primary.withValues(alpha: 0.08),
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 child: Text(
@@ -764,7 +764,7 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
                             width: 36,
                             height: 36,
                             decoration: BoxDecoration(
-                              color: AppColors.primary.withOpacity(0.08),
+                              color: AppColors.primary.withValues(alpha: 0.08),
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: const Icon(
@@ -786,7 +786,7 @@ class _AdminCategoriesScreenState extends State<AdminCategoriesScreen> {
                             width: 36,
                             height: 36,
                             decoration: BoxDecoration(
-                              color: AppColors.error.withOpacity(0.08),
+                              color: AppColors.error.withValues(alpha: 0.08),
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child: const Icon(
